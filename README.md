@@ -6,7 +6,7 @@ This is the first python project which was initially programmed to calculated th
 
 The initial user interface of this program looks as shown below:
 
-There are two canvas in this ui whose task are described:
+There are two canvas in this ui whose task are described:<br>
 ##Button canvas:
 Button canvas holds five buttons whose tasks are as follows:
 1.Add: This button is used to add the files from the local directories. After we choose a file, the file name is displated with a clickable button. If we press the               button, the image is viewed in next interface.
