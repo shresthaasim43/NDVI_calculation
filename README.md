@@ -1,6 +1,6 @@
 # NDVI_calculation
 ## Introduction
-Normalized Difference Vegetation Index (NDVI) quantifies vegetation by measuring the difference between near-infrared (which vegetation strongly reflects) and red light (which vegetation absorbs). Its value ranges from -1 to 1. The formula for calculation of NDVI is:
+Normalized Difference Vegetation Index (NDVI) quantifies vegetation by measuring the difference between near-infrared (which vegetation strongly reflects) and red light (which vegetation absorbs). Its value ranges from -1 to 1. The formula for calculation of NDVI is:<br>
             ![NDVI equation](https://latex.codecogs.com/gif.latex?NDVI%3D%5Cfrac%7BNIR-Red%7D%7BNIR&plus;Red%7D)
 
 This program can be used to:
