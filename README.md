@@ -23,10 +23,11 @@ Button canvas holds five buttons whose tasks are as follows:
 
 3. <B>Compare</B>: For comparing the NDVI values of two time frames, first calculate the NDVI values using Calculate button for the two timespace.After you click the <B>Click</B>button  a new interface appears, where you need to choose the NDVI imagery of two periods calculated <br> <img src="Assets/Compare_Button.JPG" width="200">
 
-4. <B>Subplot</B>: This button is used to sub-plot the three images on the same interface. For example; 2 images of different times and their comaparison.<br><img src="Assets/Subplot_Button.JPG " width="200">
-5. <B>Mask image</B>: This area is used to mask the resulted or raw image by the study area of the project.<br><img src="Assets/Mask_Image_Button.JPG " width="200">
+4. <B>Subplot</B>: A interface containing space for three inputs appears after you click <B>Sub Plot</B> button. Please choose two calculated NDVI values and the compared image to view the difference between NDVI values and the amount changed during the gap<br><img src="Assets/Subplot_Button.JPG " width="200">
+5. <B>Mask image</B>: After you click this <B>Mask Image</B> button, a new interface containing three button appears.Firstly, open the shapefile of your region of intererst using <B>Open Shape File </B> button, secondly open the georeferenced imagery using <B>Open Tif File</B>button, and then press <B>Mask and Save As</B> button to mask the imagery with the shapefile and save it your desired local directory.<br><img src="Assets/Mask_Image_Button.JPG " width="200">
 
 ## Main canvas
-The main canvas is for holding the input image and outputs from the program. A user can click on the files to view the imagery on another window. 
+The main canvas is for holding the input image and outputs from the program. A user can click on the files to view the imagery on another window. For clear visualization of the program, a tutorial video in the 'gif format' is presented below:
+ 
 
 
