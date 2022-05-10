@@ -15,7 +15,7 @@ import numpy as np
 
 W,H = 500,700
 
-TIFF_NAMES = ['Choose Band']
+TIFF_NAMES = ['Choose']
 TIFF_FILES = [None]
 TIFF_IMAGES = [None]
 CANVAS_LIST = [None]
@@ -23,7 +23,7 @@ CANVAS_LIST = [None]
 WINDOW = Tk()
 WINDOW.geometry('+10+10') #window starting from 10,10
 WINDOW.geometry('{}x{}'.format(W,H)) #set the geomentry of WINDOW
-WINDOW.title("Normalization Difference Vegetation Index") 
+WINDOW.title("Normalization Difference Vegetation Index")
 
 
 style = Style()  
@@ -281,7 +281,7 @@ Place_Calculate_btn = BUTTON_CANVAS.create_window(105,13,window=calculate_btn,an
 compare_btn = Button(WINDOW,text='Compare',style='W.TButton',command=partial(openWindow2,'compare'))
 Place_Compare_btn = BUTTON_CANVAS.create_window(200,13,window=compare_btn,anchor=NW)
 
-showSubplot_btn = Button(WINDOW,text='Sub Plot',style='W.TButton',command=partial(openWindow2,'showSubPlot'))
+showSubplot_btn = Button(WINDOW,text='Subplot',style='W.TButton',command=partial(openWindow2,'showSubPlot'))
 Place_ShowSubplot_btn = BUTTON_CANVAS.create_window(295,13,window=showSubplot_btn,anchor=NW)
 
 mask_btn = Button(WINDOW,text='Mask Image',style='W.TButton',command=maskWindow)
