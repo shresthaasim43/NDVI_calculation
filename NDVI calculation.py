@@ -157,26 +157,21 @@ def maskWindow():
     Window3.title('Mask Image')
     Window3.geometry('350x250+250+250')
 
-    label1 = canvas.create_text((5,5), text=" ", font="MSGothic 15 ", fill='#000000',anchor=NW)
-    shapeFile_btn = Button(Window3, text='Open Shape File',command=openShapeFile)
-    ShapeFIle_btn = canvas.create_window(1,5,window=shapeFile_btn,anchor=NW)
+    label1 = canvas.create_text((5,5), text=" ", font="MSGothic 30 ", fill='#000000',anchor=NW)
+    shapeFile_btn = Button(Window3, text='Select Shape File',command=openShapeFile)
+    ShapeFIle_btn = canvas.create_window(100,5,window=shapeFile_btn,anchor=NW)
     
-    label11 = Label(Window3,text=shapeFilePath).place(x=15,15)
+  
     
     
-    
-# comments 123
-# comments 456
-    label2 = canvas.create_text((5,60), text=" ", font="MSGothic 15 ", fill='#000000',anchor=NW)
-    tif_file_btn = Button(Window3, text='Open Tif File',command=openTif_File)
+    label2 = canvas.create_text((5,60), text=" ", font="MSGothic 30 ", fill='#000000',anchor=NW)
+    tif_file_btn = Button(Window3, text='Select Tif File',command=openTif_File)
     Tif_file_btn = canvas.create_window(100,75,window=tif_file_btn,anchor=NW)
-    
-    label21= Label(Window3,text=shapeFilePath).place(x=15,70)
     
     
 
     saveAs_btn = Button(Window3, text='Mask and Save as',command=maskImage)
-    SaveAs_btn = canvas.create_window(5,150,window=saveAs_btn,anchor=NW)
+    SaveAs_btn = canvas.create_window(100,150,window=saveAs_btn,anchor=NW)
     Window3.mainloop()
 
 def maskImage():

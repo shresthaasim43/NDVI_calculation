@@ -28,6 +28,7 @@ Button canvas holds five buttons whose tasks are as follows:
 
 ## Main canvas
 The main canvas is for holding the input image and outputs from the program. A user can click on the files to view the imagery on another window. For clear visualization of the main canvas and flow of program, a tutorial video in the 'gif format' is presented below:
+![Manual](https://github.com/shresthaasim43/NDVI_calculation/raw/newBranch/Assets/Manual.gif)
 
 
 
