@@ -15,7 +15,7 @@ import numpy as np
 
 W,H = 500,700
 
-TIFF_NAMES = ['Choose Band']
+TIFF_NAMES = ['Choose']
 TIFF_FILES = [None]
 TIFF_IMAGES = [None]
 CANVAS_LIST = [None]
@@ -23,7 +23,7 @@ CANVAS_LIST = [None]
 WINDOW = Tk()
 WINDOW.geometry('+10+10') #window starting from 10,10
 WINDOW.geometry('{}x{}'.format(W,H)) #set the geomentry of WINDOW
-WINDOW.title("Normalization Difference Vegetation Index") 
+WINDOW.title("Normalization Difference Vegetation Index")
 
 
 style = Style()  
@@ -159,15 +159,24 @@ def maskWindow():
 
     label1 = canvas.create_text((5,5), text=" ", font="MSGothic 15 ", fill='#000000',anchor=NW)
     shapeFile_btn = Button(Window3, text='Open Shape File',command=openShapeFile)
-    ShapeFIle_btn = canvas.create_window(100,5,window=shapeFile_btn,anchor=NW)
+    ShapeFIle_btn = canvas.create_window(1,5,window=shapeFile_btn,anchor=NW)
+    
+    label11 = Label(Window3,text=shapeFilePath).place(x=15,15)
+    
+    
+    
 # comments 123
 # comments 456
     label2 = canvas.create_text((5,60), text=" ", font="MSGothic 15 ", fill='#000000',anchor=NW)
     tif_file_btn = Button(Window3, text='Open Tif File',command=openTif_File)
     Tif_file_btn = canvas.create_window(100,75,window=tif_file_btn,anchor=NW)
+    
+    label21= Label(Window3,text=shapeFilePath).place(x=15,70)
+    
+    
 
     saveAs_btn = Button(Window3, text='Mask and Save as',command=maskImage)
-    SaveAs_btn = canvas.create_window(100,150,window=saveAs_btn,anchor=NW)
+    SaveAs_btn = canvas.create_window(5,150,window=saveAs_btn,anchor=NW)
     Window3.mainloop()
 
 def maskImage():
@@ -281,7 +290,7 @@ Place_Calculate_btn = BUTTON_CANVAS.create_window(105,13,window=calculate_btn,an
 compare_btn = Button(WINDOW,text='Compare',style='W.TButton',command=partial(openWindow2,'compare'))
 Place_Compare_btn = BUTTON_CANVAS.create_window(200,13,window=compare_btn,anchor=NW)
 
-showSubplot_btn = Button(WINDOW,text='Sub Plot',style='W.TButton',command=partial(openWindow2,'showSubPlot'))
+showSubplot_btn = Button(WINDOW,text='Subplot',style='W.TButton',command=partial(openWindow2,'showSubPlot'))
 Place_ShowSubplot_btn = BUTTON_CANVAS.create_window(295,13,window=showSubplot_btn,anchor=NW)
 
 mask_btn = Button(WINDOW,text='Mask Image',style='W.TButton',command=maskWindow)
